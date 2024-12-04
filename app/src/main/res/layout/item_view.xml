@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px"
+    android:background="@color/ash"
+    android:id="@+id/main"
+    >
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:textColor="@color/black"
+        android:text="✅ Attendance " />
+
+    <TextView
+        android:id="@+id/date"
+        android:textSize="50px"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100px"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_layout"
+        >
+    </include>
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="750px"
+        android:background="@color/ash"
+        android:padding="10px"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="100px"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/old"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:background="@color/blue"
+        android:text="Generate"
+        android:padding="20px"
+        android:textSize="50px"
+        android:textColor="#FFCCBC" />
+
+    <TextView
+        android:id="@+id/old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text=""
+        android:textColor="@color/red"/>
+
+
+</RelativeLayout>
